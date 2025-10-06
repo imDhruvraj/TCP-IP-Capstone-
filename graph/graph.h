@@ -33,9 +33,7 @@ typedef struct graph_ {
 
 graph_t *create_new_graph(char *topology_name);
 node_t *create_graph_node(graph_t *graph, char *node_name);
-void insert_link_between_two_nodes(node_t *node1, node_t *node2,
-                                   char *from_if_name, char *to_if_name,
-                                   unsigned int cost);
+void insert_link_between_two_nodes(node_t *node1, node_t *node2, char *from_if_name, char *to_if_name, unsigned int cost);
 void dump_graph(graph_t *graph);
 
 #endif
