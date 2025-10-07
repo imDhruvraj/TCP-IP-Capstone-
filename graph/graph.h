@@ -10,8 +10,8 @@ typedef struct link_ link_t;
 
 typedef struct interface_ {
     char if_name[IF_NAME_SIZE];
-    struct node_ *owner;    // owning node
-    link_t *link;           // link it belongs to
+    struct node_ *owner;                   // owning node
+    link_t *link;                          // link it belongs to
 } interface_t;
 
 struct link_ {
@@ -27,7 +27,7 @@ struct node_ {
 
 typedef struct graph_ {
     char topology_name[32];
-    node_t *node_list[100]; // for simplicity, fixed size
+    node_t *node_list[100];                // for simplicity, fixed size
     int node_count;
 } graph_t;
 
